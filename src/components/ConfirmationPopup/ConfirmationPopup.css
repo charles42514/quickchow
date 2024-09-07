@@ -13,16 +13,16 @@
 
 .popup-content {
     background: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     width: 80%;
     max-width: 500px;
     text-align: center;
     position: relative;
-    max-height: 65%; /* Reduce height */
+    max-height: 80vh; /* Adjust as needed */
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    overflow: hidden; /* Prevents content from overflowing */
 }
 
 .check-icon {
@@ -46,13 +46,14 @@
 }
 
 .order-summary {
-    flex-grow: 1;
-    overflow-y: auto;
-    margin-bottom: 0; /* Remove bottom margin */
+    flex-grow: 1; /* Allow it to take up available space */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-bottom: 10px; /* Add margin for spacing */
     text-align: left;
     background-color: hsl(20, 50%, 98%); /* Match the DessertPage background color */
     padding: 10px;
     border-radius: 2px;
+    max-height: 300px; /* Fixed height for scrolling */
 }
 
 .order-total {
@@ -118,4 +119,35 @@
     padding: 0px;
     border-radius: 10px; /* Apply border-radius to the whole container */
     margin-bottom: 20px; /* Add space below the container */
+}
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 375px) {
+    .popup-content {
+        width: 95%;
+        padding: 15px;
+        max-height: 90vh; /* Adjust height for better visibility */
+    }
+
+    .order-summary-total {
+        max-height: calc(90vh - 140px); /* Adjust height for mobile view */
+    }
+
+    .main-header {
+        font-size: 1.4rem;
+    }
+
+    .sub-header {
+        font-size: 0.9rem;
+    }
+
+    .order-total {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .start-new-order {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
 }

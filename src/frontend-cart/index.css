@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+}
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.cart{
+    background-color: antiquewhite;
+    display: flex;
+    width: 1440px;
+}
+.container{
+    background-color: white;
+    padding: 50px 30px;
+}
+.container h1{
+    font-weight: bold;
+    margin: 0;
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: 322px 322px 322px;
+}
+.container-grid div *{
+    margin: 0;
+}
+.container-grid div{
+    position: relative;
+}
+.meal-img{
+    width: 100%;
+}

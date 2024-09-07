@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.app-container {
+  margin: 0 40px; /* Adds 40px margin to the left and right sides */
+}

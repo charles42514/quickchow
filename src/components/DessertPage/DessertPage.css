@@ -1,0 +1,72 @@
+/* Global Styles */
+.dessert-page {
+    background-color: hsl(20, 50%, 98%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100vh; /* Full height of the screen */
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto; /* Let the content size naturally */
+    flex-wrap: wrap; /* Allow wrapping for mobile view */
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+    gap: 1rem;
+    flex: 2;
+}
+
+.cart-container {
+    flex: 1;
+    max-width: 30%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 20px;
+    height: auto;
+}
+
+/* Mobile View (375px width) */
+@media (max-width: 375px) {
+    .main-content {
+        flex-direction: column; /* Stack the content vertically */
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+        gap: 1rem;
+        width: 100%; /* Full width */
+    }
+
+    .cart-container {
+        width: 100%; /* Full width for mobile */
+        margin-left: 0; /* Remove margin */
+        margin-top: 20px;
+        max-width: none; /* Remove max-width restriction */
+    }
+}
+
+/* Desktop View (1440px width) */
+@media (min-width: 1440px) {
+    .dessert-page {
+        max-width: 1440px;
+        margin: 0 auto; /* Center the page on desktop */
+    }
+
+    .card-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+
+    .cart-container {
+        max-width: 30%;
+    }
+}

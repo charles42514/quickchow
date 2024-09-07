@@ -1,0 +1,118 @@
+.cart-container {
+    background-color: #ccc;
+    border: 0px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .cart-header {
+    margin-bottom: 1rem;
+    color: hsl(14, 86%, 42%);
+  }
+  
+  .cart-items {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .item-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .item-info {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+  }
+  
+  .item-name {
+    font-weight: bold;
+  }
+  
+  .item-quantity,
+  .item-price,
+  .item-total {
+    font-weight: normal;
+  }
+
+  .item-quantity {
+    color: hsl(6, 94%, 49%) !important ;
+    font-weight: 600 !important ;
+  }
+  
+  .remove-button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .empty-cart {
+    text-align: center;
+  }
+  
+  .empty-cart-image {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+    height: 200px;
+  }
+  
+  .empty-cart-text {
+    font-size: 16px;
+    color: brown;
+    font-weight: 500;
+  }
+  
+  .cart-total {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .checkout-button {
+    background-color: hsl(14, 86%, 42%) !important;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px !important;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .carbon-neutral {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .favicon-icon {
+    margin-right: 8px;
+  }
+  
+  .remove-icon {
+    width: 15px;
+    height: 15px;
+  }
+  

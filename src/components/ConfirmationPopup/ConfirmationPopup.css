@@ -1,0 +1,121 @@
+.confirmation-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    max-height: 65%; /* Reduce height */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.check-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.main-header {
+    font-size: 1.8rem;
+    margin-bottom: 0px;
+    text-align: left; /* Align text to the left */
+    font-weight: bold;
+}
+
+.sub-header {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: gray;
+    text-align: left; /* Align text to the left */
+}
+
+.order-summary {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 0; /* Remove bottom margin */
+    text-align: left;
+    background-color: hsl(20, 50%, 98%); /* Match the DessertPage background color */
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.order-total {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: flex; /* Make it a flex container */
+    justify-content: space-between; /* Space between the label and total */
+    text-align: left;
+    background-color: hsl(20, 50%, 98%);
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.start-new-order {
+    background-color: hsl(14, 86%, 42%);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border-radius: 30px;
+    margin-bottom: 0px;
+}
+
+.order-item {
+    display: flex;
+    margin: 10px;
+    align-content: space-between;
+    justify-content: space-between;
+}
+.item-image {
+    height: 60px;
+    width: 60px;   
+    margin-right: 15px;
+}
+
+.item-details-total {
+    display: flex;
+    justify-content: space-between;
+    object-fit: cover;
+}
+
+.item-total {
+    font-weight: bold;
+    text-align: right;
+    min-width: 100px; /* Ensures the total is aligned at the right end */
+}
+
+.item-quantity-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.item-quantity-price span {
+    margin-right: 10px; /* Adds space between quantity and price */
+}
+
+.order-summary-total {
+    background-color: hsl(20, 50%, 98%); /* Background color */
+    padding: 0px;
+    border-radius: 10px; /* Apply border-radius to the whole container */
+    margin-bottom: 20px; /* Add space below the container */
+}

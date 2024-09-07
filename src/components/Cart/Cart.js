@@ -38,7 +38,7 @@ const Cart = ({ cartItems, total, onCheckout, onRemoveFromCart }) => {
                     </div>
                     <div className="cart-total">
                         <span style={{ fontWeight: 'normal' }}>Order Total</span>
-                        <span>${total.toFixed(2)}</span>
+                        <span style={{ fontWeight: 'bold' }} >${total.toFixed(2)}</span>
                     </div>
                     <div className="carbon-neutral">
                         <img src='/assets/images/favicon-32x32.png' alt='Favicon' className="favicon-icon" />
